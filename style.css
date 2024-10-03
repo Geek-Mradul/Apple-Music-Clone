@@ -1,0 +1,94 @@
+.menu-dummy {
+    width: 19vw;
+    height: 100vh;
+    background: #252526;
+    border-right: solid 1px var(--border-color);
+}
+
+.menu-section {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 19vw;
+    box-sizing: border-box;
+}
+
+.head-logo {
+    display: flex;
+    flex-direction: column;
+    margin: 17px 2.2vw 0px 2.2vw;
+}
+
+.head-logo svg {
+    fill: var(--primary-color);
+}
+
+.search-button {
+    position: relative;
+    background: #1F1F1F;
+    width: 12vw;
+    color: var(--primary-color);
+    border: none;
+    padding: 6px 6px 6px 28px;
+    background-image: url(/assets/fonts/searchbtn.svg);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    left: -5px;
+    margin: 28px 0px;
+    border-radius: 5px;
+    border: solid 1px hsla(0, 0%, 100%, .1);
+    transition: all ease-in-out 10ms;
+}
+
+.search-button:focus {
+    transition: all ease-in-out 10ms;
+    outline: solid 4px hwb(354 32% 3% / 0.6);
+}
+
+.head-nav {
+    margin: 0px 2.2vw;
+}
+
+.head-nav-link-list {
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.main-section {
+    width: 81vw;
+}
+
+.foot {
+    color: #ffffffa3;
+    font-size: 11px;
+    padding: 14px 40px;
+    background: #323232;
+    line-height: 14px;
+}
+
+.foot-info {
+    padding: 6px 0px 8px 0px;
+}
+
+.foot a {
+    color: #ffffff;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+.foot-link {
+    display: flex;
+}
+
+.foot-link-item-f {
+    padding-right: 10px;
+}
+
+.foot-link-item {
+    padding: 0px 10px;
+    border-left: solid 1px hsla(0, 0%, 100%, .1);
+}

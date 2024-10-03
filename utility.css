@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url(/assets/fonts/SFPro.woff2);
+}
+
+:root {
+    --border-color: #ffffff1a;
+    --primary-color: #ffffffeb;
+    --key-red: #fa586a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: SF Pro, sans-serif;
+    list-style: none;
+}
+
+body {
+    display: flex;
+}
+
+body a {
+    text-decoration: none;
+}
