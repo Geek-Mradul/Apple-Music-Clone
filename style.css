@@ -64,6 +64,26 @@
     color: var(--primary-color);
 }
 
+.head-links {
+    position: absolute;
+    left: 2vw;
+    bottom: 2vh;
+    width: 18vh;
+}
+
+.head-links a {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.head-links a:hover {
+    text-decoration: underline;
+}
+
+.head-links img {
+    margin-bottom: -2.5px;
+}
+
 .main-section {
     width: 81vw;
 }
