@@ -23,3 +23,17 @@ body {
 body a {
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #2C2C2C;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #9b9b9b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;
+}
