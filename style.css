@@ -44,7 +44,6 @@
     margin: 0px 2.2vw;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-items: center;
 }
 
@@ -89,8 +88,17 @@
 }
 
 .player {
+    display: flex;
     height: 8.5vh;
     background: #2C2C2C;
+}
+
+.player-controls {
+    margin: 11px 0 11px 5.5vw;
+}
+
+.player-controls img svg {
+    fill: var(--primary-color);
 }
 
 .main-window {
