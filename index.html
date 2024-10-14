@@ -13,8 +13,9 @@
     <!-- Favicon Assets Ends -->
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="utility.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <!-- Stylesheets Ends Here -->
+</head>
 
 <body>
     <header class="menu-section">
@@ -32,14 +33,16 @@
         </nav>
         <ul class="head-nav">
             <li>
-                <div><img src="assets/fonts/home.svg" alt="Home"></div> <a href="" class="head-nav-link-list">Home</a>
+                <div><img src="assets/fonts/home.svg" alt="Home"></div> <a class="head-nav-link-list"
+                    value="home">Home</a>
             </li>
             <li>
-                <div><img src="assets/fonts/new.svg" alt="New Tab"></div> <a href="" class="head-nav-link-list">New</a>
+                <div><img src="assets/fonts/new.svg" alt="New Tab"></div> <a class="head-nav-link-list"
+                    value="new">New</a>
             </li>
             <li>
-                <div><img src="assets/fonts/radio.svg" alt="Radio"></div> <a href=""
-                    class="head-nav-link-list">Radio</a>
+                <div><img src="assets/fonts/radio.svg" alt="Radio"></div> <a class="head-nav-link-list"
+                    value="radio">Radio</a>
             </li>
         </ul>
 
@@ -58,7 +61,7 @@
             </div>
         </div>
         <div class="main-window">
-            <main class="main-content"></main>
+            <main id="main-content"></main>
             <footer class="foot">
                 <div class="foot-info">Copyright © 2024 <a href="">Apple Clone</a> This is a Clone Site.</div>
                 <ul class="foot-link">
@@ -72,9 +75,9 @@
         </div>
     </div>
     <!-- Scripts Start -->
-    <script src="script.js"></script>
+    <script src="router.js"></script>
     <!-- Scripts Ends -->
-    </head>
+
 </body>
 
 </html>
