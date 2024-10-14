@@ -1,3 +1,6 @@
+if (path == "") {
+    window.history.pushState("", "", "new");
+}
 function loadPage($path) {
     if ($path == "") return;
     const container = document.getElementById("main-content");
@@ -15,6 +18,7 @@ document.querySelectorAll(".head-nav-link-list").forEach((item) => {
     item.addEventListener("click", function () {
         const path = item.getAttribute("value");
         loadPage(path);
+        window.history.pushState("", "", path);
     });
 });
 window.onload = function () {
@@ -32,10 +36,6 @@ window.onload = function () {
     else {
         const path = window.location.pathname.split("/");
         switch (path[1]) {
-            case "": {
-                loadPage("new");
-                break;
-            }
             case "new": {
                 loadPage("new");
                 break;
