@@ -15,7 +15,6 @@ document.querySelectorAll(".head-nav-link-list").forEach((item) => {
     item.addEventListener("click", function () {
         const path = item.getAttribute("value");
         loadPage(path);
-        window.history.pushState("", "", path);
     });
 });
 window.onload = function () {
