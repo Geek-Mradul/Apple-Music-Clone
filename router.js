@@ -11,6 +11,13 @@ function loadPage($path) {
         }
     }
 }
+document.querySelectorAll(".head-nav-link-list").forEach((item) => {
+    item.addEventListener("click", function () {
+        const path = item.getAttribute("value");
+        loadPage(path);
+        window.history.pushState("", "", path);
+    });
+});
 window.onload = function () {
 
     function getQueryParam(name) {
@@ -23,11 +30,15 @@ window.onload = function () {
         window.history.pushState({}, '', redirectPath);
         loadPage(pageName);
     }
-
-    {
+    else {
         const path = window.location.pathname.split("/");
         switch (path[1]) {
             case "": {
+                loadPage("new");
+                window.history.pushState("", "", "new");
+                break;
+            }
+            case "new": {
                 loadPage("new");
                 window.history.pushState("", "", "new");
                 break;
@@ -45,12 +56,5 @@ window.onload = function () {
                 break;
             }
         }
-        document.querySelectorAll(".head-nav-link-list").forEach((item) => {
-            item.addEventListener("click", function () {
-                const path = item.getAttribute("value");
-                loadPage(path);
-                window.history.pushState("", "", path);
-            });
-        });
     }
 }
