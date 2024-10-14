@@ -39,7 +39,6 @@ window.onload = function () {
             }
             case "new": {
                 loadPage("new");
-                window.history.pushState("", "", "new");
                 break;
             }
             case "home": {
