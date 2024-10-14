@@ -34,7 +34,6 @@ window.onload = function () {
         switch (path[1]) {
             case "": {
                 loadPage("new");
-                window.history.pushState("", "", "new");
                 break;
             }
             case "new": {
