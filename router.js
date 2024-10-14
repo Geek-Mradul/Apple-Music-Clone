@@ -1,5 +1,7 @@
-if (path == "") {
+const iniURL = window.location.pathname.split("/");
+if (iniURL[1] == "") {
     window.history.pushState("", "", "new");
+    console.log("Working")
 }
 function loadPage($path) {
     if ($path == "") return;
