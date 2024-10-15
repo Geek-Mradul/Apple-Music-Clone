@@ -1,0 +1,29 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fa233b;
+    background-image: linear-gradient(119.67deg, #f65677, #f83d59 5%, #fa233b 12%, #e22338 78%, #e3314d 92%, #e33f61 99%);
+    padding: 20px 20%;
+    color: #ffffffeb;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 300px;
+}
+
+.home div img {
+    margin: 10px 0px;
+}
+
+.description {
+    line-height: 1.5em;
+    font-size: 17px;
+    font-weight: 600;
+    max-width: 370px;
+    margin: 0px 10px 20px;
+}
