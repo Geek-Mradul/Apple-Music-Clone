@@ -1,8 +1,10 @@
+// Redirection from ./ to ./new
 const iniURL = window.location.pathname.split("/");
 if (iniURL[1] == "") {
     window.history.pushState("", "", "new");
-    console.log("Working")
 }
+
+// Page Loading Function
 function loadPage($path) {
     if ($path == "") return;
     const container = document.getElementById("main-content");
@@ -12,10 +14,14 @@ function loadPage($path) {
     request.onload = function () {
         if (request.status == 200) {
             container.innerHTML = request.responseText;
-            console.log(request.responseText);
+        }
+        else {
+            loadPage(404);
         }
     }
 }
+
+// Event Listener for the Navigation Buttons
 document.querySelectorAll(".head-nav-link-list").forEach((item) => {
     item.addEventListener("click", function () {
         const path = item.getAttribute("value");
@@ -23,6 +29,8 @@ document.querySelectorAll(".head-nav-link-list").forEach((item) => {
         window.history.pushState("", "", path);
     });
 });
+
+// Reloading and Redirection Logic
 window.onload = function () {
 
     function getQueryParam(name) {

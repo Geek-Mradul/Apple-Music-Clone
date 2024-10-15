@@ -57,6 +57,7 @@
     line-height: 34px;
     font-weight: 400;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .head-links {
